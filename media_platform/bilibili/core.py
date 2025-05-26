@@ -120,6 +120,7 @@ class BilibiliCrawler(AbstractCrawler):
             if 'video' in href:
                 href_list.append(href)
         utils.logger.warn(f"href_count: {len(href_list)}")
+        if len(href_list) == 0:exit(1)
         semaphore = asyncio.Semaphore(5)
         tasks = [asyncio.create_task(self.get_video_detail(href, semaphore)) for href in href_list]
         await asyncio.gather(*tasks)
