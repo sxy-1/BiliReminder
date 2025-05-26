@@ -113,6 +113,7 @@ class BilibiliCrawler(AbstractCrawler):
         utils.logger.info(fr"{likes} {coins} {favs} {shares}")
         '''
 
+        await new_page1.wait_for_load_state('networkidle')  # 等待网络空闲
         a_list = await new_page1.query_selector_all('xpath=//div[@class="video-list row"]//a')
         href_list = []
         for a in a_list:
