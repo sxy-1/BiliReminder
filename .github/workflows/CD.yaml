@@ -1,0 +1,13 @@
+name: CD
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: echo
+        run: |
+          echo "success init"
