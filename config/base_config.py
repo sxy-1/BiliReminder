@@ -5,7 +5,7 @@ LOGIN_TYPE = "manual"
 COOKIES = ""
 KEYWORDS = "python"
 ENABLE_GET_COMMENTS = True
-HEADER_LESS = False
+HEADER_LESS = True
 LOGIN_TYPE = 'qrcode'
 ENABLE_GET_COMMENTS = True
 
