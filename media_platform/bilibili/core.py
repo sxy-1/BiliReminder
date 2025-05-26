@@ -128,7 +128,9 @@ class BilibiliCrawler(AbstractCrawler):
     async def get_video_detail(self, href: Optional[str], semaphore:Semaphore) -> None:
         if href is None:
             return
-        href = 'https:' + href
+        if not href.startswith('https:'):
+            href = 'https:' + href
+
         """get detail data"""
         async with semaphore:
             page = await self.browser_context.new_page()
