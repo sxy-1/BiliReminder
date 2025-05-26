@@ -1,0 +1,9 @@
+2025/05/26-11:15:45.533 71cc Reusing MANIFEST G:\AGit\github\BiliReminder\browser_data\bili_user_data_dir\Default\Local Storage\leveldb/MANIFEST-000001
+2025/05/26-11:15:45.537 71cc Recovering log #367
+2025/05/26-11:15:45.541 71cc Reusing old log G:\AGit\github\BiliReminder\browser_data\bili_user_data_dir\Default\Local Storage\leveldb/000367.log 
+2025/05/26-11:15:51.912 71cc Level-0 table #372: started
+2025/05/26-11:15:51.916 71cc Level-0 table #372: 34267 bytes OK
+2025/05/26-11:15:51.917 71cc Delete type=0 #367
+2025/05/26-11:16:02.004 71cc Level-0 table #374: started
+2025/05/26-11:16:02.011 71cc Level-0 table #374: 53414 bytes OK
+2025/05/26-11:16:02.013 71cc Delete type=0 #371
