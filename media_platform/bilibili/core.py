@@ -47,8 +47,7 @@ class BilibiliCrawler(AbstractCrawler):
 
             utils.logger.info("Start")
             await self.search()
-            await asyncio.sleep(5000)
-
+            utils.logger.info("End")
     async def launch_browser(self, chromium: BrowserType, playwright_proxy: Optional[Dict], user_agent: Optional[str],
                              headless: bool = True) -> BrowserContext:
         """Launch browser and create browser context"""
