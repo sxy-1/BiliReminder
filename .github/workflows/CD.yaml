@@ -2,7 +2,13 @@ name: CD
 
 on:
   release:
-    types: [created]
+    types: [ created ]
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: 'Release tag'
+        required: true
+        default: 'v1.0.0'
 
 jobs:
   build:
@@ -47,6 +53,6 @@ jobs:
         uses: softprops/action-gh-release@v1
         with:
           files: dist/main
-          tag_name: ${{ github.event.release.tag_name }}
+          tag_name: ${{ github.event.inputs.tag }} || ${{ github.event.release.tag_name }}
           repository: ${{ github.repository }}
           token: ${{ secrets.GITHUB_TOKEN }}
